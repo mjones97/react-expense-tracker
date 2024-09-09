@@ -8,7 +8,7 @@ function App() {
   const [expenses, setExpenses] = useState([]);
   const [showExpense, setShowExpense] = useState(false)
   const [currentExpense, setCurrentExpense] = useState(null)
-  const [budget, setBudget] = useState(1000);
+  const budget = 1000;
 
   const addExpense = (expense) => {
     setExpenses([...expenses, {...expense, id: Date.now() }]);
