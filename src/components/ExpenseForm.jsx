@@ -18,32 +18,29 @@ const ExpenseForm = ({ onAddExpense, currentExpense, onUpdateExpense }) => {
     };
 
     return (
-        <div>
-            <form className='expense-form' onSubmit={handleSubmit}>
-                <h1>Expense Tracker</h1>
-                <input 
-                    type="text"
-                    value={text}
-                    onChange={(e) => setText(e.target.value)}
-                    placeholder='Expense'
-                />
-                <input
-                    type='number'
-                    value={amount}
-                    onChange={(e) => setAmount(e.target.value)}
-                    placeholder='Amount'
-                    required
-                />
-                <select value={category} onChange={(e) => setCategory(e.target.value)} required>
-                    <option value="">Select Category</option>
-                    <option value="Food">Food</option>
-                    <option value="Entertainment">Entertainment</option>
-                    <option value="Utilities">Utilities</option>
-                    <option value="Others">Others</option>
-                </select>
-                <button className='add-btn' type='submit'>{currentExpense ? 'Update' : 'Add'} Expense</button>
-            </form>
-        </div>
+        <form onSubmit={handleSubmit}>
+            <input 
+                type="text"
+                value={text}
+                onChange={(e) => setText(e.target.value)}
+                placeholder='Expense'
+            />
+            <input
+                type='number'
+                value={amount}
+                onChange={(e) => setAmount(e.target.value)}
+                placeholder='Amount'
+                required
+            />
+            <select value={category} onChange={(e) => setCategory(e.target.value)} required>
+                <option value="">Select Category</option>
+                <option value="Food">Food</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Utilities">Utilities</option>
+                <option value="Others">Others</option>
+            </select>
+            <button className='add-btn' type='submit'>{currentExpense ? 'Update' : 'Add'} Expense</button>
+        </form>
     )
 }
 

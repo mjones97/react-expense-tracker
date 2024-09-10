@@ -21,7 +21,7 @@ const ExpenseChart = ({ expenses }) => {
   };
 
   return (
-    <div className='chart-container'>
+    <div className='box'>
       <Pie data={data} />
     </div>
   )
