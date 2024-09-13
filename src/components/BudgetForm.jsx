@@ -16,7 +16,7 @@ const BudgetForm = ({ budget, setBudget }) => {
 
     return (
         <form onSubmit={handleBudgetSubmit} className='d-flex flex-column'>
-            <h4 className='mb-3'>Set Your Budget</h4>
+            <h4 className='mb-4'><u>Set Your Budget</u></h4>
             <input
                 type="number"
                 id="budgetInput"

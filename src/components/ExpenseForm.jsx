@@ -19,7 +19,7 @@ const ExpenseForm = ({ onAddExpense, currentExpense, onUpdateExpense }) => {
 
     return (
         <form onSubmit={handleSubmit} className='d-flex flex-column flex-wrap gap-2'>
-            <h4 className='mb-3'>Add Expenses</h4>
+            <h4 className='mb-3'><u>Add Expenses</u></h4>
             <div className='d-flex gap-3'>
                 <input 
                     type="text"
