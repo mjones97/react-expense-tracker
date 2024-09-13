@@ -3,7 +3,7 @@ import ExpenseItem from './ExpenseItem';
 
 const ExpenseList = ({ expenses, onEditExpense, onDeleteExpense}) => {
     return (
-        <div>
+        <div className='mt-4'>
             <ul className='expenses-list'>
                 {expenses.map(expense => (
                     <ExpenseItem

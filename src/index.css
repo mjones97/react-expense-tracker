@@ -22,7 +22,6 @@ li:last-child {
 }
 
 input, select {
-  width: 100%;
   padding: 12px 15px;
   border: none;
   border-radius: 10px;
@@ -52,36 +51,22 @@ button:hover {
   border: 2px solid #000;
 }
 
-.sidebar {
-  height: 100vh;
-  width: 250px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #f8f9fa;
-  z-index: 1000;
-}
-
-.sidebar .nav-link {
-  font-size: 18px;
-  padding: 10px 36px;
-  margin-bottom: 20px;
-}
-
-.sidebar .nav-link:hover {
-  background-color: #e9ecef;
-}  
-
-.sidebar-menu {
-  margin-top: 100px;
-}
-
 .content {
-  margin-left: 250px;
   padding: 20px;
 }
 
+#budgetInput {
+  width: 200px;
+}
+
 .custom-card {
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 6px;
+  margin: 0;
+  padding: 25px;
+}
+
+.custom-card-1 {
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -89,14 +74,8 @@ button:hover {
   text-align: center;
 }
 
-@media (max-width: 767px) {
-  .content {
-    margin-left: 0;
-  }
-  
-  .sidebar {
-    width: 100%;
-    position: relative;
-    height: auto;
-  }
+.underline {
+  width: 240px;
+  border: 1px solid #000;
+  margin-left: 2px;
 }
